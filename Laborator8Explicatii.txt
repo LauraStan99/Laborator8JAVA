@@ -1,0 +1,22 @@
+  Pentru inceput am ales interfata phpMyAdmin ca sistem de gestiune a bazei de date,astfel se poate administra baza de date prin intermediul unui browser web.
+  Prima data am accesat interfata phpMyAdmin si am creat baza de date "MusicAlbums" precum si un nou userAccount cu username-ul:"dba" si parola:"sql".
+  Am descarcat un driver-database : mysql-connector-java-5.1 , pe care l-am adaugat in libraria proiectului ,continand o colectie de clase ,utilizat pentru realizarea conexiunii cu baza de date si lucrul pe baza acesteia.
+  In pachetul com.company am inclus clasele: Main si Database.
+
+  Clasa Database:
+*este o clasa singleton, avand o singura instanta (connect de tipul Connection ), un constructor privat si metode statice ,una din metodele statice are obiect de tip return al acestei clase de singleton (doConnection() ).
+* Metoda doConnection():Folosindu-ne de identificatorul bazei de date, care este specific protocolului jdbc ,putem specifica tipul bazei de date, baza de date fiind de tipul mysql (sub-protocol) , fiind o baza de date locala (localhost) care se regaseste la portul 3308 , cu numele MusicAlbums , avand un useraccount cu numele "dba" si parola "sql". Clasa DriverManager conectează o aplicație la o sursa de date, care este specificată de adresa URL a bazei de date ,insotite de user-ul si parola corespunzatoare clasa implică apelarea la metoda DriverManager.getConnection , ea e cea care realizeaza conexiunea
+* Metoda closeConnection(): folosita pentru a incheia conexiunea cu baza de date ,utilizand instanta clasei singleton
+* Metoda fillDatabase(): dupa realizarea conexiunii cu baza de date , exact ca in cazul metodei doConnectio() , cu un obiect de tipul Statement (pentru a executa comenziile DDL ), se scriu cele doua comenzi de constructie a tabelelor "Albums" si "Artists" si se executa ,  apoi se inchide conexiunea cu baza de date
+
+  Am creat un nou pachet com.company.controller in care am inclus cele 2 clase:ArtistController si AlbumController.
+
+  Clasa ArtistController:
+*contine 2 metode ce actioneaza asupra bazei de date si un constructor
+*Metoda create(String nameArtist, String country) :  Aceasta functie creeaza o noua inregistrare in tabelul Artists ,mai intai se realizeaza conexiunea cu baza de date prin apelarea metodei doConnection() . Am ales sa folosesc un obiect de tipul PreparedStatement pentru a realiza o interogare SQL cu parametrii , care sunt setati in functie de numarul parametrului din interogare si tipul dorit .Dupa care se apeleaza metoda executeUpdate() pentru realizarea comenzii SQL si se inchide conexiunea cu baza de date prin apelarea metodei closeConnection().
+*Metoda findByName(String name) : Aceasta functie creeaza o interogarea asupra tabelului Artists din baza de date mai intai se realizeaza conexiunea cu baza de date prin apelarea metodei doConnection() . Am ales sa folosesc un obiect de tipul PreparedStatement pentru a realiza o interogare SQL cu parametrii , care sunt setati in functie de numarul parametrului din interogare si tipul dorit.Dupa care se apeleaza metoda executeQuery() pentru realizarea interogarii SQL .Toata informatia extrasa din baza de date in urma interogarii este stocata intr-un obiect de tipul ResultSet (pentru a se putea face mai apoi deplasarea prin rezultat cu ajutorul metodelor ResultSet) ,astfel am parcurs randul salvat si am afisat pe rand fiecare informatie din fiecare coloana .Se apeleaza metoda closeConnection() pentru incheierea conexiunii cu baza de date
+
+ClasaAlbumController:
+*contine 2 metode ce actioneaza asupra bazei de date si un constructor
+*Metoda create(String name, int artistId, int releaseYear) :  Aceasta functie creeaza o noua inregistrare in tabelul Albums ,mai intai se realizeaza conexiunea cu baza de date prin apelarea metodei doConnection() .Am ales sa folosesc un obiect de tipul PreparedStatement pentru a realiza o interogare SQL cu parametrii , care sunt setati in functie de numarul parametrului din interogare si tipul dorit (String name, int artistId, int releaseYear).Dupa care se apeleaza metoda executeUpdate() pentru realizarea comenzii SQL si se inchide conexiunea cu baza de date prin apelarea metodei closeConnection().
+
