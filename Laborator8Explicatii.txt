@@ -20,3 +20,7 @@ ClasaAlbumController:
 *contine 2 metode ce actioneaza asupra bazei de date si un constructor
 *Metoda create(String name, int artistId, int releaseYear) :  Aceasta functie creeaza o noua inregistrare in tabelul Albums ,mai intai se realizeaza conexiunea cu baza de date prin apelarea metodei doConnection() .Am ales sa folosesc un obiect de tipul PreparedStatement pentru a realiza o interogare SQL cu parametrii , care sunt setati in functie de numarul parametrului din interogare si tipul dorit (String name, int artistId, int releaseYear).Dupa care se apeleaza metoda executeUpdate() pentru realizarea comenzii SQL si se inchide conexiunea cu baza de date prin apelarea metodei closeConnection().
 
+Clasa Main:
+*Am apelat metoda fillDatabase() pentru a popula data de baze cu cele 2 tabele
+*Apoi am creat 2 obiecte unul de tip ArtistController si unul AlbumController si am inserat inregistrari in cele 2 tabele create .
+*Am apelat metodele "find()" pentru a verifica anumite informatii din baza de date
