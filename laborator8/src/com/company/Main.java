@@ -1,6 +1,8 @@
 package com.company;
+import com.company.controller.AlbumController;
+import com.company.controller.ArtistController;
+
 import java.sql.*;
-import java.sql.ResultSet;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {

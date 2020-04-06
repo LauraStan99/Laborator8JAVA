@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -27,6 +28,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.company.controller" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -58,6 +64,7 @@
       <workItem from="1585944683876" duration="456000" />
       <workItem from="1585993866569" duration="9183000" />
       <workItem from="1586073680672" duration="8265000" />
+      <workItem from="1586159697793" duration="1332000" />
     </task>
     <servers />
   </component>
@@ -65,6 +72,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="254" width="398" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586160677075">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="254" width="398" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1586160677075" />
     <state x="437" y="81" key="DetectedRootsChooserDialog" timestamp="1586019493582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -73,22 +84,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586019489295" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1586156792123">
+    <state width="1322" height="237" key="GridCell.Tab.0.bottom" timestamp="1586161016267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586156792123" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1586156792123">
+    <state width="1322" height="237" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586161016267" />
+    <state width="1322" height="237" key="GridCell.Tab.0.center" timestamp="1586161016266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586156792123" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1586156792122">
+    <state width="1322" height="237" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586161016266" />
+    <state width="1322" height="237" key="GridCell.Tab.0.left" timestamp="1586161016265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586156792122" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1586156792123">
+    <state width="1322" height="237" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586161016265" />
+    <state width="1322" height="237" key="GridCell.Tab.0.right" timestamp="1586161016266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586156792123" />
+    <state width="1322" height="237" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586161016266" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586156271293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
